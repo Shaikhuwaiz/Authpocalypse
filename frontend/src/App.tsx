@@ -178,7 +178,7 @@ export default function App() {
         ) : (
           <div>
            <h2 className="text-2xl text-white mb-3">
-  Welcome {user.name}!
+  Welcome {user.name}
 </h2>
             <p className="text-green-400 mb-3">{message}</p>
             <button
