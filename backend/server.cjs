@@ -41,7 +41,7 @@ app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email, password });
   if (!user) return res.status(400).json({ message: "Invalid credentials" });
-  res.json({ message: "Login successful" });
+  res.json({ message: "Login successful", user }); // ✅ include user
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT} 🛜`));
