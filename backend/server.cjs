@@ -7,12 +7,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 1000;
 
-app.use(cors({ origin: "http://localhost:1000", credentials: true }));
+// Frontend usually runs on port 5173 (Vite) or 3000 (React)
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
 
+// MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, { dbName: "test" })
   .then(() => console.log("MongoDB connected ✅"))
-  .catch(err => console.log(err));
+  .catch(err => console.log("MongoDB connection error ❌", err));
 
 const UserSchema = new mongoose.Schema({
   name: String,
@@ -23,6 +25,7 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", UserSchema);
 
+// Register
 app.post("/register", async (req, res) => {
   const { name, age, email, password } = req.body;
   const exists = await User.findOne({ email });
@@ -33,6 +36,7 @@ app.post("/register", async (req, res) => {
   res.json({ message: "Registered successfully" });
 });
 
+// Login
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email, password });

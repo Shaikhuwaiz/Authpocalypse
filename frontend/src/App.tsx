@@ -29,43 +29,52 @@ export default function App() {
     setFormData({ name: "", age: 0, email: "", password: "" });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
 
-    // --- Registration ---
+  try {
+    const endpoint = isLogin
+      ? "http://localhost:1000/login"
+      : "http://localhost:1000/register";
+
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Something went wrong");
+    }
+
+    // --- Registration success ---
     if (!isLogin) {
-      localStorage.setItem(formData.email, JSON.stringify(formData));
       setMessage("Registration successful. Redirecting to login...");
-      setMessageColor("green"); // ✅ added
+      setMessageColor("green");
       clearForm();
 
       setTimeout(() => {
         setIsLogin(true);
         setMessage("You may now login.");
-        setMessageColor("green"); // ✅ added
-        setLoading(false);
       }, 900);
-
       return;
     }
 
-    // --- Login flow ---
-    const stored = localStorage.getItem(formData.email);
-    const storedUser: User | null = stored ? JSON.parse(stored) : null;
-
-    if (storedUser && storedUser.password === formData.password) {
-      setUser(storedUser);
-      setMessage("Login successful");
-      setMessageColor("green"); // ✅ added
-    } else {
-      alert("Unauthorized user! Please register first.");
-      setMessage("Login failed");
-      setMessageColor("red");
-    }
-
+    // --- Login success ---
+    setUser({ name: formData.name, age: formData.age, email: formData.email, password: "" });
+    setMessage("Login successful");
+    setMessageColor("green");
+  } catch (err: any) {
+    alert(err.message);
+    setMessage("Login or registration failed");
+    setMessageColor("red");
+  } finally {
     setLoading(false);
-  };
+  }
+};
 
   const handleLogout = () => {
     setUser(null);
