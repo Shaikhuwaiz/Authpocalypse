@@ -7,7 +7,6 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 1000;
 
-// Frontend usually runs on port 5173 (Vite) or 3000 (React)
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
 
@@ -22,8 +21,11 @@ const UserSchema = new mongoose.Schema({
   email: String,
   password: String,
 });
-
 const User = mongoose.model("User", UserSchema);
+
+app.get("/", (req, res) => {
+  res.send("Server is running correctly.");
+});
 
 // Register
 app.post("/register", async (req, res) => {
@@ -41,7 +43,7 @@ app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email, password });
   if (!user) return res.status(400).json({ message: "Invalid credentials" });
-  res.json({ message: "Login successful", user }); // ✅ include user
+  res.json({ message: "Login successful", user });
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT} 🛜`));
