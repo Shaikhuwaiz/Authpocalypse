@@ -54,8 +54,8 @@ Improved full-stack debugging between client and server
 ## 🗄️ Database (MongoDB Atlas)  
 The backend uses **MongoDB Atlas** for secure cloud storage of user data.  
 
-![MongoDB Screenshot]()
-https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080
+![MongoDB Screenshot](https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080)
+
 ---
 
 ## ⚙️ Uptime Monitoring  
