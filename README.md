@@ -45,15 +45,16 @@ Improved full-stack debugging between client and server
 ![Frontend Screenshot](https://github.com/user-attachments/assets/c15fcd07-e0df-47ea-9466-96c4e2e730ca)
 
 **Backend (Railway)**  
-🔗 [Backend on Railway](https://loginwebpage.up.railway.app)  
-![Backend Screenshot](https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b)
+🔗 [Backend on Railway](https://loginwebpage.up.railway.app) 
+![Backend Screenshot]("https://github.com/user-attachments/assets/eec5725a-d79c-4d63-86fc-3cf7771ca2b8")
+**
 
 ---
 
 ## 🗄️ Database (MongoDB Atlas)  
 The backend uses **MongoDB Atlas** for secure cloud storage of user data.  
 
-![MongoDB Screenshot](./assets/mongodb.png)
+![MongoDB Screenshot](https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b)
 
 ---
 
