@@ -8,7 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 1000;
 
 app.use(cors({
-  origin: true,
+  origin: [
+    "https://loginpage-git-main-shaikhuwaizs-projects.vercel.app",
+    "http://localhost:5173"
+  ],
   credentials: true
 }));
 app.use(express.json());
