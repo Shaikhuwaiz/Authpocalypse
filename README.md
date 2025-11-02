@@ -33,6 +33,10 @@ Understood how to configure proxy and CORS headers
 Improved full-stack debugging between client and server
 
 <img width="1146" height="831" alt="image" src="https://github.com/user-attachments/assets/c15fcd07-e0df-47ea-9466-96c4e2e730ca" />
+<img width="1883" height="803" alt="image" src="https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b" />
+<img width="1909" height="810" alt="image" src="https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080" />
+
+
 
 🚀 Live Demo
 
