@@ -38,15 +38,29 @@ Improved full-stack debugging between client and server
 
 
 
+## 🚀 Live Demo  
 
-🚀 Live Demo
+**Frontend (Vercel)**  
+🔗 [Login System on Vercel](https://loginweb-two.vercel.app)  
+![Frontend Screenshot](https://github.com/user-attachments/assets/c15fcd07-e0df-47ea-9466-96c4e2e730ca)
 
-Login System on Vercel: https://loginweb-two.vercel.app
-<img width="1146" height="831" alt="image" src="https://github.com/user-attachments/assets/c15fcd07-e0df-47ea-9466-96c4e2e730ca" />
-Backend on Railway: https://loginwebpage.up.railway.app
-<img width="1883" height="803" alt="image" src="https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b" />
-Uptime Monitoring: https://dashboard.uptimerobot.com/monitors/801713743 – keeps backend awake 24/7
-<img width="1909" height="810" alt="image" src="https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080" />
+**Backend (Railway)**  
+🔗 [Backend on Railway](https://loginwebpage.up.railway.app)  
+![Backend Screenshot](https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b)
+
+---
+
+## 🗄️ Database (MongoDB Atlas)  
+The backend uses **MongoDB Atlas** for secure cloud storage of user data.  
+
+![MongoDB Screenshot](./assets/mongodb.png)
+
+---
+
+## ⚙️ Uptime Monitoring  
+The backend is kept awake **24/7** using **UptimeRobot**, preventing Railway from sleeping.  
+🔗 [View Monitor Dashboard](https://dashboard.uptimerobot.com/monitors/801713743)  
+![UptimeRobot Screenshot](https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080)
 
 🛠️ Setup
 # Frontend
