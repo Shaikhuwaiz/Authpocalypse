@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 1000;
 app.use(cors({
   origin: [
     "https://loginweb-git-main-shaikhuwaizs-projects.vercel.app",
-    "https://loginweb-two.vercel.app/",
+    "https://loginweb-two.vercel.app",
     "https://loginweb-c4opf34z4-shaikhuwaizs-projects.vercel.app",
     "http://localhost:5173"
   ],
