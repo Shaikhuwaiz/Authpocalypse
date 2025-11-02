@@ -1,31 +1,49 @@
-I’m a Full Stack Developer (Java + React + MongoDB) passionate about building dynamic web applications and solving real-world problems through clean, efficient code.
+🔐 Login and Registration System
 
-🚀 Skills
+Tech Stack: React.js • Spring Boot • MySQL
+Deployments:
 
-Frontend: React, HTML, CSS, TailwindCSS, JavaScript, TypeScript
+Frontend: Vercel
 
-Backend: Node.js, Express, Spring Boot
+Backend: Railway
+ (kept active using UptimeRobot
+)
 
-Database: MongoDB, MySQL
+📘 Overview
 
-Tools: Git, GitHub, Vercel, Railway
+A full-stack authentication app that supports user registration and login.
+Built to explore secure API communication, environment configuration, and production hosting.
 
-Other: REST APIs, Authentication, Deployment
+⚙️ Features
 
-💻 Projects
+User registration and login using REST APIs
 
-Login System (MERN) – Secure registration and login system with MongoDB and Railway.
-🔗 Live Demo
- | Backend API
+MySQL database integration
 
-🌱 Currently learning
+CORS issue fixes between frontend and backend
 
-Spring Boot and advanced backend integration with databases.
+UptimeRobot monitoring to keep Railway backend active 24/7
 
-📫 Connect with me
+🧠 Lessons Learned
 
-LinkedIn
- www.linkedin.com/in/owaiz-dev
+Fixed ~18 small bugs during deployment
 
-GitHub
-https://github.com/Shaikhuwaiz
+Understood how to configure proxy and CORS headers
+
+Improved full-stack debugging between client and server
+
+<img width="1146" height="831" alt="image" src="https://github.com/user-attachments/assets/c15fcd07-e0df-47ea-9466-96c4e2e730ca" />
+
+🚀 Live Demo
+
+Login System on Vercel: https://loginweb-two.vercel.app
+Backend on Railway: https://loginwebpage.up.railway.app
+Uptime Monitoring: https://dashboard.uptimerobot.com/monitors/801713743 – keeps backend awake 24/7
+
+🛠️ Setup
+# Frontend
+npm install
+npm start
+
+# Backend
+node server.cjs
