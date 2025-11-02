@@ -54,14 +54,14 @@ Improved full-stack debugging between client and server
 ## 🗄️ Database (MongoDB Atlas)  
 The backend uses **MongoDB Atlas** for secure cloud storage of user data.  
 
-![MongoDB Screenshot](https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b)
-
+![MongoDB Screenshot]()
+https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080
 ---
 
 ## ⚙️ Uptime Monitoring  
 The backend is kept awake **24/7** using **UptimeRobot**, preventing Railway from sleeping.  
 🔗 [View Monitor Dashboard](https://dashboard.uptimerobot.com/monitors/801713743)  
-![UptimeRobot Screenshot](https://github.com/user-attachments/assets/bc630bfb-8b77-4e73-a41f-c38a80430080)
+![UptimeRobot Screenshot](https://github.com/user-attachments/assets/fb21cdb2-4b72-4938-a483-1f98682ac03b)
 
 🛠️ Setup
 # Frontend
