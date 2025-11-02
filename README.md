@@ -27,6 +27,7 @@ UptimeRobot monitoring to keep Railway backend active 24/7
 🧠 Lessons Learned
 
 Fixed ~18 small bugs during deployment
+<img width="850" height="997" alt="image" src="https://github.com/user-attachments/assets/853a3716-57b3-4b3c-a20c-515a12031336" />
 
 Understood how to configure proxy and CORS headers
 
