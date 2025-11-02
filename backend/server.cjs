@@ -35,13 +35,22 @@ app.get("/", (req, res) => {
 
 // Register
 app.post("/register", async (req, res) => {
-  const { name, age, email, password } = req.body;
-  const exists = await User.findOne({ email });
-  if (exists) return res.status(400).json({ message: "User already exists" });
+  try {
+    const { name, age, email, password } = req.body;
+    if (!email || !password)
+      return res.status(400).json({ message: "Missing fields" });
 
-  const user = new User({ name, age, email, password });
-  await user.save();
-  res.json({ message: "Registered successfully" });
+    const exists = await User.findOne({ email });
+    if (exists)
+      return res.status(400).json({ message: "User already exists" });
+
+    const user = new User({ name, age, email, password });
+    await user.save();
+    return res.json({ message: "Registered successfully" });
+  } catch (err) {
+    console.error("Register error:", err);
+    return res.status(500).json({ message: "Server error" });
+  }
 });
 
 // Login
