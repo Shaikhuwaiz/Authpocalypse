@@ -46,7 +46,7 @@ Improved full-stack debugging between client and server
 
 **Backend (Railway)**  
 🔗 [Backend on Railway](https://loginwebpage.up.railway.app) 
-![Backend Screenshot]("https://github.com/user-attachments/assets/eec5725a-d79c-4d63-86fc-3cf7771ca2b8")
+![Backend Screenshot](https://github.com/user-attachments/assets/e66d2696-c131-46f3-8cb4-0d252fe3f8a0)
 **
 
 ---
