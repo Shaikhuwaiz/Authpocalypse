@@ -35,7 +35,7 @@ export default function App() {
 
   try {
     const endpoint = isLogin
-      ? "hhttps://loginwebpage.up.railway.app/login"
+      ? "https://loginwebpage.up.railway.app/login"
       : "https://loginwebpage.up.railway.app/register";
 
     const response = await fetch(endpoint, {
